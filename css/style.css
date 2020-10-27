@@ -1,0 +1,51 @@
+/*
+Colors used:
+Primary colors:
+  #F1C9CD - pink
+  #222D27 - dark gray
+Secondary colors:
+  #808080 - gray
+  #C0D7D2 - green
+  #DEDDDB - light gray
+*/
+/* Header font: font-family: 'Oswald', sans-serif; */
+/* Body font: font-family: 'Roboto', sans-serif;*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #222D27; /* dark gray */
+}
+h1, h2, h3 {
+  font-weight: 500;
+  color: #222D27; /* dark gray */
+  font-family: 'Oswald', sans-serif;
+}
+h4, h5, h6 {
+  font-weight: 400;
+  color: #808080; /* gray */
+  font-family: 'Oswald', sans-serif;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2.25em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.75em;
+}
+h5 {
+  font-size: 1.5em;
+}
+h6 {
+  font-size: 1.25em;
+}
+img {
+  width: 100%;
+}
