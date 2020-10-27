@@ -10,57 +10,94 @@ Secondary colors:
 */
 /* Header font: font-family: 'Oswald', sans-serif; */
 /* Body font: font-family: 'Roboto', sans-serif;*/
-
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
   color: #222D27; /* dark gray */
 }
+
 h1, h2, h3, a {
   font-weight: 500;
   color: #222D27; /* dark gray */
   font-family: 'Oswald', sans-serif;
 }
+
 h4, h5, h6 {
   font-weight: 400;
   color: #808080; /* gray */
   font-family: 'Oswald', sans-serif;
 }
+
 h1 {
   font-size: 2.5em;
 }
+
 h2 {
   font-size: 2.25em;
 }
+
 h3 {
   font-size: 2em;
 }
+
 h4 {
   font-size: 1.75em;
 }
+
 h5 {
   font-size: 1.5em;
 }
+
 h6 {
   font-size: 1.25em;
 }
+
 a {
   color: #F1C9CD; /* pink */
   font-size: 1.2em;
   text-decoration: none; /* No underlining */
 }
+
 a:hover, a:focus {
   color: #808080; /* gray */
   text-decoration: underline; /* Underlining when hovering over a link */
 }
+
 a:visited { /* visited link */
   color: #F1C9CD; /* pink */
 }
+
 a:active { /* selected link */
   color: #C0D7D2; /* green */
 }
+
 img {
   width: 100%;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  border: 10px double #F1C9CD; /* pink */
+  border-radius: 5px;
+  padding: 8px 22px;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  background-color: #F1C9CD; /* pink */
+  border-radius: 5px;
+  color: #222D27; /* dark gray */
+  text-decoration: none;
+  transition: 0.2s opacity;
+}
+
+.button:active {
+  background-color: #C0D7D2; /* green */
+  border: 10px double #C0D7D2; /* green */
+  border-radius: 5px;
+  color: #222D27; /* dark gray */
+  text-decoration: none;
+  transition: 0.2s opacity;
 }
