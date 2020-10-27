@@ -18,7 +18,7 @@ body {
   line-height: 1.5;
   color: #222D27; /* dark gray */
 }
-h1, h2, h3 {
+h1, h2, h3, a {
   font-weight: 500;
   color: #222D27; /* dark gray */
   font-family: 'Oswald', sans-serif;
@@ -45,6 +45,21 @@ h5 {
 }
 h6 {
   font-size: 1.25em;
+}
+a {
+  color: #F1C9CD; /* pink */
+  font-size: 1.2em;
+  text-decoration: none; /* No underlining */
+}
+a:hover, a:focus {
+  color: #808080; /* gray */
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:visited { /* visited link */
+  color: #F1C9CD; /* pink */
+}
+a:active { /* selected link */
+  color: #C0D7D2; /* green */
 }
 img {
   width: 100%;
