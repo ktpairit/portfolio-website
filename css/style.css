@@ -188,11 +188,19 @@ footer ul li {
   padding: 0 5px;
 }
 
-#contact {
-    border-top: 1px solid #DEDDDB; /* light gray */
-    margin: 0 25px;
-}
-
 .titleHeader, .resume {
   text-align: center;
+}
+
+#socialIcons {
+  padding: 10px 0;
+}
+
+#socialIcons a {
+  padding: 4px;
+}
+
+#socialIcons a:hover {
+  padding: 4px;
+  color: #808080; /* dark gray */
 }
