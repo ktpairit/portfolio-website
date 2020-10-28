@@ -10,10 +10,6 @@ Secondary colors:
 */
 /* Header font: font-family: 'Oswald', sans-serif; */
 /* Body font: font-family: 'Roboto', sans-serif;*/
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -104,67 +100,4 @@ img {
   color: #222D27; /* dark gray */
   text-decoration: none;
   transition: 0.2s opacity;
-}
-
-.logo {
-  max-width: 108px;
-}
-
-header {
-  padding: 15px 0;
-  text-align: center;
-}
-
-nav {
-  border-top: 1px solid #DEDDDB; /* light gray */
-  border-bottom: 1px solid #DEDDDB; /* light gray */
-}
-
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
-}
-
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-}
-
-#hero {
-  text-align: center;
-  padding: 0 20px;
-}
-
-.row {
-  margin: 75px 0;
-  display: inline-block;
-}
-
-.container {
-  padding: 0 10px;
-  text-align: center;
-}
-
-footer {
-  background-color: #222D27; /* dark gray */
-  font-size: 20px;
-  font-weight: 300;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 5px 10px 10px;
-}
-
-footer h2 {
-  color: #FFFFFF;
-  padding: 20px 0 0;
-}
-
-footer ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 0 5px;
 }
