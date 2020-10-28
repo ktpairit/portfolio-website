@@ -81,6 +81,10 @@ img {
   width: 100%;
 }
 
+img.email {
+  width: 200px;
+}
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   border: 10px double #F1C9CD; /* pink */
@@ -118,6 +122,7 @@ header {
 nav {
   border-top: 1px solid #DEDDDB; /* light gray */
   border-bottom: 1px solid #DEDDDB; /* light gray */
+  width: 100%;
 }
 
 nav > ul {
@@ -136,30 +141,44 @@ nav > ul > li > a {
 
 #hero {
   text-align: center;
-  padding: 0 20px;
+  padding: 0 10px;
+}
+
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
 }
 
 .row {
-  margin: 75px 0;
+  margin: 25px 0;
   display: inline-block;
+}
+
+#work {
+  text-align: center;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #DEDDDB; /* light gray */
+}
+
+#work .project {
+  text-align: left;
 }
 
 .container {
   padding: 0 10px;
-  text-align: center;
 }
 
 footer {
-  background-color: #222D27; /* dark gray */
   font-size: 20px;
   font-weight: 300;
-  color: #FFFFFF;
   text-align: center;
   padding: 5px 10px 10px;
 }
 
 footer h2 {
-  color: #FFFFFF;
   padding: 20px 0 0;
 }
 
@@ -167,4 +186,8 @@ footer ul li {
   list-style-type: none;
   display: inline-block;
   padding: 0 5px;
+}
+
+.titleHeader {
+  text-align: center;
 }
