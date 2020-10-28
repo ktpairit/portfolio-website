@@ -188,6 +188,11 @@ footer ul li {
   padding: 0 5px;
 }
 
+#contact {
+    border-top: 1px solid #DEDDDB; /* light gray */
+    margin: 0 25px;
+}
+
 .titleHeader, .resume {
   text-align: center;
 }
