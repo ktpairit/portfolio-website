@@ -87,9 +87,9 @@ img.email {
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  border: 10px double #F1C9CD; /* pink */
+  border: 8px double #F1C9CD; /* pink */
   border-radius: 5px;
-  padding: 8px 22px;
+  padding: 9px 30px;
   transition: 0.2s opacity;
 }
 
@@ -188,6 +188,6 @@ footer ul li {
   padding: 0 5px;
 }
 
-.titleHeader {
+.titleHeader, .resume {
   text-align: center;
 }
