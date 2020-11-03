@@ -7,15 +7,18 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap">
-  <link rel="stylesheet" href="css/all.css"> <!--for Font Awesome Social Media Icons (loads all styles) -->
+  <link rel="stylesheet" href="css/all.css">
+  <!--for Font Awesome Social Media Icons (loads all styles) -->
   <title>About Me, Kristen</title>
 </head>
 
 <body>
   <!--For the header-->
   <header>
-    <div>
-      <img src="img/beachbum/kp_logo.png" class="logo" alt="Kristen's Logo">
+    <div id="myHeader">
+      <a href="index.html">
+        <img src="img/beachbum/kp_logo.png" class="logo" alt="Kristen's Logo">
+      </a>
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Home</a></li>
@@ -28,7 +31,7 @@
   <main>
     <div class="titleHeader">
       <div class="container">
-        <h1>About Me</h1>
+        <h2>About Me</h2>
       </div>
     </div>
     <div>
@@ -38,20 +41,20 @@
           <img src="img/beachbum/about/kp2@1200.jpg" alt="Kristen">
         </picture>
       </div>
-      <div>
-        <div class="container">
+      <div class="container about-page">
+        <div class="column col-md-6 col-lg-7 col-xl-4">
           <h2 class="titleHeader">My Story</h2>
           <p>I am a lover for all things user-friendly. I possess a strong eye for design and continually aim to create positive user experiences. Life can be challenging at times, so I aim to create seamless and user-friendly experiences where I can
             - via solid web design and solutions. Additionally, providing great user experiences improves ROI and will keep customers coming back. If you are interested in talking, please contact me!
             - Kristen ☺︎</p>
-            <div class="resume">
-              <a href="files/cv03142019.pdf" class="button" target="_blank">Download my Resume</a>
-            </div>
+          <div class="resume">
+            <a href="files/cv03142019.pdf" class="button" target="_blank">Download my Resume</a>
+          </div>
         </div>
-        <div class="container">
+        <div class="mySkills column col-md-6 col-lg-5 col-xl-4">
           <h2>UX Skills & Tools</h2>
           <div class="row">
-            <div class="col-md-6 col-lg-8 col-xl-4">
+            <div>
               <h3>Relevant Skills</h3>
               <ul>
                 <li>User Research, Personas, and Interviews</li>
@@ -65,7 +68,7 @@
                 <li>Mockups</li>
               </ul>
             </div>
-            <div class="col-md-6 col-lg-8 col-xl-4">
+            <div>
               <h3>Tools & Languages</h3>
               <ul>
                 <li>HTML, CSS, Bootstrap</li>
@@ -81,7 +84,7 @@
   </main>
   <!--For the Footer-->
   <footer id="contact">
-    <div class="container">
+    <div class="container myFooter">
       <h2>Let's Connect!</h2>
       <p>Send an email or just say hi!</p>
       <div>
@@ -91,8 +94,8 @@
         <a href="https://www.facebook.com/profile.php?id=13731812" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
         <a href="https://www.linkedin.com/in/kristenpairitz/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
       </div>
-      <p>Copyright Kristen 2021</p>
     </div>
+    <p id="copyright">Copyright 2021</p>
   </footer>
 </body>
 

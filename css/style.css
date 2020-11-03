@@ -90,7 +90,8 @@ img.email {
   border: 8px double #F1C9CD; /* pink */
   border-radius: 5px;
   padding: 9px 30px;
-  transition: 0.2s opacity;
+  transition: 0.8s opacity;
+  margin-bottom: 25px;
 }
 
 .button:hover {
@@ -98,7 +99,6 @@ img.email {
   border-radius: 5px;
   color: #222D27; /* dark gray */
   text-decoration: none;
-  transition: 0.2s opacity;
 }
 
 .button:active {
@@ -107,11 +107,16 @@ img.email {
   border-radius: 5px;
   color: #222D27; /* dark gray */
   text-decoration: none;
-  transition: 0.2s opacity;
 }
 
 .logo {
   max-width: 108px;
+}
+
+#myHeader {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {
@@ -157,6 +162,9 @@ nav > ul > li > a {
 
 .container {
   padding: 0 10px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
@@ -212,6 +220,41 @@ footer ul li {
   padding: 10px;
 }
 
+.about-page h2 {
+  margin-bottom: 0;
+}
+
+.about-page h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.about-page h4 {
+  margin: 10px 0;
+}
+
+#intro {
+  margin-top: 0;
+}
+
+#copyright {
+  background-color: #222D27; /* dark gray */
+  color: #F1C9CD; /* pink */
+  padding: 10px 0;
+  margin: 30px 0 0;
+}
+
+.myFooter {
+  border-top: 1px solid #DEDDDB; /* light gray */
+  clear: both;
+}
+
+svg {
+  width: 100%;
+  max-width 100%;
+  height: auto;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -251,11 +294,49 @@ nav > ul > li > a {
   display: table;
 }
 
+.mySkills h2 {
+  font-size: 1.75em;
+}
+
+.mySkills h3 {
+  font-size: 1.5em;
+  color: #808080; /* gray */
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  /* animation: 4s color-change infinite alternate linear; */
+}
+
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+.col-lg-7 {
+  width: 60%;
+}
+
+.col-lg-5 {
+  width: 40%;
+}
+
 }
 /* ==============================
 X-large devices (1440px or larger)
