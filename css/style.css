@@ -90,7 +90,8 @@ img.email {
   border: 8px double #F1C9CD; /* pink */
   border-radius: 5px;
   padding: 9px 30px;
-  transition: 0.8s opacity;
+  background-color: transparent;
+  transition: 0.3s background-color;
   margin-bottom: 25px;
 }
 
@@ -251,7 +252,7 @@ footer ul li {
 
 svg {
   width: 100%;
-  max-width 100%;
+  max-width: 100%;
   height: auto;
 }
 
