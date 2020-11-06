@@ -252,7 +252,7 @@ footer ul li {
 
 svg {
   width: 100%;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -325,7 +325,20 @@ nav > ul > li > a {
   /* animation: 4s color-change infinite alternate linear; */
 }
 
+#me {
+  display: block;
+  width: 50%;
+  margin: auto;
 }
+
+.photo {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+}
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
