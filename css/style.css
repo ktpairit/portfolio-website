@@ -112,9 +112,10 @@ img.email {
 
 .logo {
   max-width: 108px;
+  margin-left: 20px;
 }
 
-#myHeader {
+.myHeader {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -123,11 +124,9 @@ img.email {
 header {
   margin: 10px 0;
   padding: 10px 0;
-  text-align: center;
 }
 
 nav {
-  border-top: 1px solid #DEDDDB; /* light gray */
   border-bottom: 1px solid #DEDDDB; /* light gray */
   width: 100%;
 }
@@ -135,14 +134,30 @@ nav {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
+.navToggle li:not(:last-child) {
+  display: none;
+}
+
+.navToggle, .navToggle.responsive {
+  position: relative;
+}
+
+.navToggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navToggle.responsive li  {
+  display: block;
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 25px;
   text-transform: uppercase;
 }
 
@@ -277,8 +292,24 @@ nav {
   margin-left: 25px;
 }
 
+nav > ul {
+  margin: 1em 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
 nav > ul > li > a {
   padding: 0 13px;
+}
+
+.navToggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navToggle li:last-child {
+  display: none;
 }
 
 .container {
