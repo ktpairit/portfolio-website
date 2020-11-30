@@ -1,11 +1,11 @@
 /*
 Colors used:
 Primary colors:
-  #F1C9CD - pink
+  #AF3B6E - dark maroon
+  #F1C9CD - light pink
   #222D27 - dark gray
 Secondary colors:
   #808080 - gray
-  #C0D7D2 - green
   #DEDDDB - light gray
 */
 /* Header font: font-family: 'Oswald', sans-serif; */
@@ -19,18 +19,28 @@ body {
   font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
-  color: #222D27; /* dark gray */
+  color: #222D27;
+  /* dark gray */
 }
 
-h1, h2, h3, a {
+h2 {
   font-weight: 500;
-  color: #222D27; /* dark gray */
+  color: #AF3B6E;
+  /* dark gray */
+  font-family: 'Oswald', sans-serif;
+}
+
+h1, h3, a {
+  font-weight: 500;
+  color: #222D27;
+  /* dark gray */
   font-family: 'Oswald', sans-serif;
 }
 
 h4, h5, h6 {
   font-weight: 400;
-  color: #808080; /* gray */
+  color: #808080;
+  /* gray */
   font-family: 'Oswald', sans-serif;
 }
 
@@ -59,22 +69,30 @@ h6 {
 }
 
 a {
-  color: #F1C9CD; /* pink */
+  color: #AF3B6E;
+  /* pink */
   font-size: 1.2em;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
 
 a:hover, a:focus {
-  color: #808080; /* gray */
-  text-decoration: underline; /* Underlining when hovering over a link */
+  color: #808080;
+  /* gray */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
 
-a:visited { /* visited link */
-  color: #F1C9CD; /* pink */
+a:visited {
+  /* visited link */
+  color: #AF3B6E;
+  /* pink */
 }
 
-a:active { /* selected link */
-  color: #C0D7D2; /* green */
+a:active {
+  /* selected link */
+  color: #F1C9CD;
+  /* green */
 }
 
 img {
@@ -86,8 +104,10 @@ img.email {
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  border: 8px double #F1C9CD; /* pink */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  border: 8px double #AF3B6E;
+  /* pink */
   border-radius: 5px;
   padding: 9px 30px;
   background-color: transparent;
@@ -96,17 +116,22 @@ img.email {
 }
 
 .button:hover {
-  background-color: #F1C9CD; /* pink */
+  background-color: #AF3B6E;
+  /* pink */
   border-radius: 5px;
-  color: #222D27; /* dark gray */
+  color: #222D27;
+  /* dark gray */
   text-decoration: none;
 }
 
 .button:active {
-  background-color: #C0D7D2; /* green */
-  border: 10px double #C0D7D2; /* green */
+  background-color: #F1C9CD;
+  /* pink */
+  border: 10px double #F1C9CD;
+  /* pink */
   border-radius: 5px;
-  color: #222D27; /* dark gray */
+  color: #222D27;
+  /* dark gray */
   text-decoration: none;
 }
 
@@ -127,11 +152,12 @@ header {
 }
 
 nav {
-  border-bottom: 1px solid #DEDDDB; /* light gray */
+  border-bottom: 1px solid #DEDDDB;
+  /* light gray */
   width: 100%;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -152,11 +178,11 @@ nav > ul {
   font-size: 20px;
 }
 
-.navToggle.responsive li  {
+.navToggle.responsive li {
   display: block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 25px;
   text-transform: uppercase;
 }
@@ -166,14 +192,22 @@ nav > ul > li > a {
   padding: 0 10px;
 }
 
-#hero span {
+#hero h2 {
   display: block;
   font-weight: 400;
+  margin-top: -3%;
+  color: #808080;
 }
 
 #hero h1 {
   margin: 0;
   padding: 0.67em 0;
+}
+
+#beachBumPage h4 {
+  font-weight: 500;
+  margin-bottom: 3%;
+  color: #222D27;
 }
 
 .container {
@@ -194,7 +228,8 @@ nav > ul > li > a {
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #DEDDDB; /* light gray */
+  border-bottom: 1px solid #DEDDDB;
+  /* light gray */
 }
 
 footer {
@@ -228,7 +263,8 @@ footer ul li {
 
 #socialIcons a:hover {
   padding: 4px;
-  color: #808080; /* dark gray */
+  color: #F1C9CD;
+  /* pink */
 }
 
 [class*="col-"] {
@@ -254,14 +290,17 @@ footer ul li {
 }
 
 #copyright {
-  background-color: #222D27; /* dark gray */
-  color: #F1C9CD; /* pink */
+  background-color: #222D27;
+  /* dark gray */
+  color: #F1C9CD;
+  /* pink */
   padding: 10px 0;
   margin: 30px 0 0;
 }
 
 .myFooter {
-  border-top: 1px solid #DEDDDB; /* light gray */
+  border-top: 1px solid #DEDDDB;
+  /* light gray */
   clear: both;
 }
 
@@ -275,116 +314,118 @@ svg {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-header {
-  border-bottom: 1px solid #DEDDDB; /* light gray */
-  text-align: unset;
-  padding: 20px 0 14px;
-}
-
-nav {
-  border: none;
-  width: auto;
-  float: right;
-  margin: 0 20px;
-}
-
-.logo {
-  margin-left: 25px;
-}
-
-nav > ul {
-  margin: 1em 0;
-}
-
-nav > ul > li {
-  display: inline-block;
-}
-
-nav > ul > li > a {
-  padding: 0 13px;
-}
-
-.navToggle li:not(:last-child) {
-  display: inline-block;
-}
-
-.navToggle li:last-child {
-  display: none;
-}
-
-.container {
-  padding: 0 25px;
-}
-
-.col-md-6 {
-  width: 50%;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.mySkills h2 {
-  font-size: 1.75em;
-}
-
-.mySkills h3 {
-  font-size: 1.5em;
-  color: #808080; /* gray */
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
+  header {
+    border-bottom: 1px solid #DEDDDB;
+    /* light gray */
+    text-align: unset;
+    padding: 20px 0 14px;
   }
-  50% {
-    fill: #fcffad;
+
+  nav {
+    border: none;
+    width: auto;
+    float: right;
+    margin: 0 20px;
   }
-  100% {
-    fill: #f76414;
+
+  .logo {
+    margin-left: 25px;
   }
-}
 
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-  /* animation: 4s color-change infinite alternate linear; */
-}
+  nav>ul {
+    margin: 1em 0;
+  }
 
-#me {
-  display: block;
-  width: 50%;
-  margin: auto;
-}
+  nav>ul>li {
+    display: inline-block;
+  }
 
-.photo {
-  display: block;
-  width: 80%;
-  margin: auto;
-}
+  nav>ul>li>a {
+    padding: 0 13px;
+  }
 
+  .navToggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navToggle li:last-child {
+    display: none;
+  }
+
+  .container {
+    padding: 0 25px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .mySkills h2 {
+    font-size: 1.75em;
+  }
+
+  .mySkills h3 {
+    font-size: 1.5em;
+    color: #808080;
+    /* gray */
+  }
+
+  @keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+
+    50% {
+      fill: #fcffad;
+    }
+
+    100% {
+      fill: #f76414;
+    }
+  }
+
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    /* animation: 4s color-change infinite alternate linear; */
+  }
+
+  #me {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+
+  .photo {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-.col-lg-7 {
-  width: 60%;
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
 }
 
-.col-lg-5 {
-  width: 40%;
-}
-
-}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
